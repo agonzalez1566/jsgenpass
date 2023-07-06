@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- Link para conectarse con ccs y los iconos... -->
+    <link rel="stylesheet" href="C:\Soporte\Programacion\JavaScript\Proyectos\Genera_Password\css\estilos.css">
+    <!-- <link rel="stylesheet" href="C:\Project-GenPass\fontawesome\css\all.min.css"> -->
+    <!-- Link para conectarse con los Fonts de Google... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&family=Montserrat:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <head>
+        <title>Generador de Contraseñas</title>
+        <script src="https://kit.fontawesome.com/744ef998e9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="logo">
+                <img src="C:\Soporte\Programacion\JavaScript\Proyectos\Genera_Password\imagenes\Logo-2022-Fondo_Transp-Font_White.png" alt="Logo">
+            </div>
+            <h1>Password Generator</h1> <br><br>
+            <form action="" class="app" id="app">
+                <div class="fila numero-caracteres">
+                    <div class="col">
+                        <label for="numero-caracteres">Número de Caracteres:</label>
+                    </div>
+                    <div class="col botones">
+                        <div>
+                            <button class="btn" id="btn-menos-uno"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                        <div>
+                            <input type="text" id="numero-caracteres" readonly value="12">
+                        </div>
+                        <div>
+                            <button class="btn" id="btn-mas-uno"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fila simbolos">
+                    <div class="col">
+                        <label for="simbolos">¿Incluir Simbolos:?</label>
+                    </div>
+                    <div class="col">
+                        <button class="btn" id="btn-simbolos"><i class="fa-solid fa-check"></i></button>
+                    </div>
+                </div>
+
+                <div class="fila numeros">
+                    <div class="col">
+                        <label for="numeros">¿Incluir Números:?</label>
+                    </div>
+                    <div class="col">
+                        <button class="btn" id="btn-numeros"><i class="fa-solid fa-check"></i></button>
+                    </div>
+                </div>
+
+                <div class="fila mayusculas">
+                    <div class="col">
+                        <label for="mayusculas">¿Incluir Mayúsculas:?</label>
+                    </div>
+                    <div class="col">
+                        <button class="btn" id="btn-mayusculas"><i class="fa-solid fa-check"></i></button>
+                    </div>
+                </div>
+                
+                <div class="fila generar">
+                    <div class="col">
+                        <button class="btn btn-generar" id="btn-generar">Generar<i class="fas fa-lock"></i></button>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="input-password" id="input-password" readonly value="aBr@24">
+                    </div>  
+                </div>
+
+                <div class="fila alerta">
+                    <div class="col">
+                        <div class="alerta-copiado" id="alerta-copiado">
+                            <p><i class="fas fa-copy"></i>Texto copiado</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="C:\Soporte\Programacion\JavaScript\Proyectos\Genera_Password\js\app.js"></script>
+    </body>
+    <footer class="texto">Desarrollado por Ag2 IT Consulting - 2022. www.ag2itc.com</footer>
+</html>
